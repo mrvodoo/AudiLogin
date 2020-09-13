@@ -5,13 +5,13 @@ import AudiCredentials
 from http.client import HTTPConnection
 
 #Logging
-#log = logging.getLogger('urllib3')  # works
-#log.setLevel(logging.DEBUG)  # needed
-#fh = logging.FileHandler("requests.log")
-#log.addHandler(fh)
+log = logging.getLogger('urllib3')
+log.setLevel(logging.DEBUG)
+fh = logging.FileHandler("requests.log")
+log.addHandler(fh)
 
 
-#Need to be moved to an seperate file - Credentials
+#Need to be retrieved from a separate file - AudiCredentials.py
 email = AudiCredentials.username
 password = AudiCredentials.password
 
