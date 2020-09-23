@@ -82,7 +82,7 @@ payload = {
 
 #print (payload)
 
-#Auth - 4 - Sign-in process: username
+#Sign-in - username
 #HTTPConnection.debuglevel = 1
 r=s.post(identifierURL, headers=loginheaders, data=payload, allow_redirects=False)
 signinpasswordURL = baseURL + r.headers.get('Location')
